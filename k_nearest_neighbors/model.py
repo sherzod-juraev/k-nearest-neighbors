@@ -37,5 +37,5 @@ class KNearestNeighbors:
 
         distance = euclidean_distance(self.X - X, axis=1)
         indexes = argpartition(distance, self.n_neighbors)[:self.n_neighbors]
-        class_label = mode(self.y[indexes])[0][0]
-        return class_label
+        class_label = mode(self.y[indexes])[0]
+        return int(class_label)
