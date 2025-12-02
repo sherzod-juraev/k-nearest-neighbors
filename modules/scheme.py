@@ -53,7 +53,7 @@ class KNearestNeighborsIn(BaseModel):
         return self
 
 
-class KNearestNeighbors(BaseModel):
+class KNearestNeighborsPredict(BaseModel):
     model_config = {
         'extra': 'forbid'
     }
